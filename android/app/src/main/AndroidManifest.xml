@@ -1,6 +1,6 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android">
     <application
-        android:label="jokengo_game"
+        android:label="jokenpo_game"
         android:name="${applicationName}"
         android:icon="@mipmap/ic_launcher">
         <activity
