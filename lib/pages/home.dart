@@ -12,6 +12,7 @@ class HomePage extends StatefulWidget {
 class _HomePageState extends State<HomePage> {
   List options = ["pedra", "papel", "tesoura"];
   var points = 0;
+  var maquina_points = 0;
 
   static const primaryColor = Color.fromARGB(255, 255, 255, 255);
 
@@ -40,7 +41,7 @@ class _HomePageState extends State<HomePage> {
       // Jogador Perdeu
       setState(() {
         _message = "Voce Perdeu!";
-        points--;
+        maquina_points++;
       });
     } else {
       //Empate
@@ -76,6 +77,17 @@ class _HomePageState extends State<HomePage> {
                 ),
               ),
             ),
+            Padding(
+              padding: EdgeInsets.only(top: 10, bottom: 16),
+              child: Text(
+                "Máquina: ${maquina_points.toString()}",
+                style: TextStyle(
+                  fontSize: 20,
+                  fontWeight: FontWeight.bold,
+                  color: Colors.white,
+                ),
+              ),
+            ),
             Image(image: imageApp, height: 150),
             Padding(
               padding: EdgeInsets.only(top: 32, bottom: 16),
@@ -91,9 +103,9 @@ class _HomePageState extends State<HomePage> {
             ),
             Padding(
               padding: EdgeInsets.only(top: 32, bottom: 10),
-              //Jogada do Jogador
+              //Pontos do Jogador
               child: Text(
-                points.toString(),
+                "Seus Pontos: ${points.toString()}",
                 style: TextStyle(
                   fontSize: 20,
                   fontWeight: FontWeight.bold,
