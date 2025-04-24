@@ -1,16 +1,27 @@
-# jokenpo_game
+# Trabalho de Faculdade: Desenvolvimento de um Jogo Mobile de Jokenpô em Dart & Flutter
 
-A new Flutter project.
+## Objetivo:
+Desenvolver um jogo mobile de Jokenpô (Pedra, Papel e Tesoura) utilizando Dart e Flutter.
 
-## Getting Started
+## Funcionalidades:
 
-This project is a starting point for a Flutter application.
+### Escolha do Usuário:
 
-A few resources to get you started if this is your first Flutter project:
+O jogador seleciona entre três opções: Pedra, Papel ou Tesoura. 
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+### Lógica do Jogo:
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+A máquina escolhe aleatoriamente uma das três opções.
+
+O sistema compara as escolhas do usuário e da máquina, determinando o vencedor de acordo com as regras clássicas do Jokenpô.
+
+### Resultado:
+
+Exibição do resultado (vitória, derrota ou empate) com base nas escolhas.
+
+## Tecnologias Utilizadas:
+
+Linguagem: Dart <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/dart/dart-original.svg" width="15" height="15" />
+
+Framework: Flutter <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/flutter/flutter-original.svg" width="15" height="15" />
+
