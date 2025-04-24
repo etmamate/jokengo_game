@@ -67,17 +67,17 @@ class _HomePageState extends State<HomePage> {
         child: Column(
           mainAxisAlignment: MainAxisAlignment.spaceEvenly,
           children: [
-            Padding(
-              padding: EdgeInsets.only(top: 32, bottom: 16),
-              child: Text(
-                "Jogada da Máquina!",
-                style: TextStyle(
-                  fontSize: 20,
-                  fontWeight: FontWeight.bold,
-                  color: Colors.white,
-                ),
-              ),
-            ),
+            // Padding(
+            //   padding: EdgeInsets.only(top: 32, bottom: 16),
+            //   child: Text(
+            //     "Jogada da Máquina!",
+            //     style: TextStyle(
+            //       fontSize: 20,
+            //       fontWeight: FontWeight.bold,
+            //       color: Colors.white,
+            //     ),
+            //   ),
+            // ),
             Padding(
               padding: EdgeInsets.only(top: 10, bottom: 16),
               child: Text(
