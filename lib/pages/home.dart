@@ -55,12 +55,16 @@ class _HomePageState extends State<HomePage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Color.fromRGBO(10, 0, 55, 1),
+      backgroundColor: Color.fromRGBO(5, 1, 22, 1),
       appBar: AppBar(
-        title: Center(
-          // child: Text("JokenPo", style: TextStyle(color: Colors.white),),
+        // title: Center(
+        //  child: Text("JokenPo", style: TextStyle(color: Colors.white),),
+        // ),
+        leading: IconButton(
+          icon: Icon(Icons.arrow_back, color: Colors.white),
+          onPressed: () => Navigator.of(context).pop(),
         ),
-        backgroundColor: Color.fromRGBO(10, 0, 55, 1),
+        backgroundColor: Color.fromRGBO(5, 1, 22, 1),
       ),
       body: Container(
         padding: EdgeInsets.only(bottom: 150),

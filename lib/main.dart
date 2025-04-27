@@ -1,3 +1,4 @@
+import 'package:JokenPo/pages/credito.dart';
 import 'package:JokenPo/pages/playmenu.dart';
 import 'package:flutter/material.dart';
 

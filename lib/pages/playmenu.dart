@@ -1,5 +1,5 @@
-import 'dart:math';
 
+import 'package:JokenPo/pages/credito.dart';
 import 'package:JokenPo/pages/home.dart';
 import 'package:flutter/material.dart';
 
@@ -11,17 +11,19 @@ class PlayMenu extends StatefulWidget {
 }
 
 class _HomePageState extends State<PlayMenu> {
-
   static const primaryColor = Color.fromARGB(255, 255, 255, 255);
 
   _comecarJogo() {
     Navigator.push(context, MaterialPageRoute(builder: (_) => HomePage()));
   }
+  _pagionaCredito() {
+    Navigator.push(context, MaterialPageRoute(builder: (_) => Credito()));
+  }
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Color.fromRGBO(10, 0, 55, 1),
+      backgroundColor: Color.fromRGBO(5, 1, 22, 1),
       // appBar: AppBar(
       //   title: Center(
       //     child: Text("JokenPo", style: TextStyle(color: Colors.white)),
@@ -50,13 +52,25 @@ class _HomePageState extends State<PlayMenu> {
               children: [
                 GestureDetector(
                   onTap: () => _comecarJogo(),
-                  child: Image.asset("images/botaojogar.png", height: 245,),
+                  child: Image.asset("images/botaojogar.png", height: 150),
                 ),
               ],
             ),
+            Row(
+              mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+              crossAxisAlignment: CrossAxisAlignment.center,
+              children: [
+                GestureDetector(
+                  onTap: () => _pagionaCredito(),
+                  child: Image.asset("images/botaocreditos.png", height: 130),
+                )
+              ],
+            )
           ],
         ),
       ),
     );
   }
 }
+
+
