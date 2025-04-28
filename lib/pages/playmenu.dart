@@ -1,4 +1,3 @@
-
 import 'package:JokenPo/pages/credito.dart';
 import 'package:JokenPo/pages/home.dart';
 import 'package:flutter/material.dart';
@@ -16,6 +15,7 @@ class _HomePageState extends State<PlayMenu> {
   _comecarJogo() {
     Navigator.push(context, MaterialPageRoute(builder: (_) => HomePage()));
   }
+
   _pagionaCredito() {
     Navigator.push(context, MaterialPageRoute(builder: (_) => Credito()));
   }
@@ -36,7 +36,7 @@ class _HomePageState extends State<PlayMenu> {
           mainAxisAlignment: MainAxisAlignment.spaceEvenly,
           children: [
             Padding(
-              padding: EdgeInsets.only(top: 10, bottom: 16),
+              padding: EdgeInsets.only(top: 75,),
               child: Text(
                 "JOKENPO",
                 style: TextStyle(
@@ -46,31 +46,37 @@ class _HomePageState extends State<PlayMenu> {
                 ),
               ),
             ),
-            Row(
-              mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-              crossAxisAlignment: CrossAxisAlignment.center,
-              children: [
-                GestureDetector(
-                  onTap: () => _comecarJogo(),
-                  child: Image.asset("images/botaojogar.png", height: 150),
-                ),
-              ],
+
+            Padding(
+              padding: EdgeInsets.only(top: 70),
+              child: Row(
+                mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                crossAxisAlignment: CrossAxisAlignment.center,
+                children: [
+                  GestureDetector(
+                    onTap: () => _comecarJogo(),
+                    child: Image.asset("images/botaojogar.png", height: 150),
+                  ),
+                ],
+              ),
             ),
-            Row(
-              mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-              crossAxisAlignment: CrossAxisAlignment.center,
-              children: [
-                GestureDetector(
-                  onTap: () => _pagionaCredito(),
-                  child: Image.asset("images/botaocreditos.png", height: 130),
-                )
-              ],
-            )
+
+            Padding(
+              padding: EdgeInsets.only(bottom: 130),
+              child: Row(
+                mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                crossAxisAlignment: CrossAxisAlignment.center,
+                children: [
+                  GestureDetector(
+                    onTap: () => _pagionaCredito(),
+                    child: Image.asset("images/botaocreditos.png", height: 130),
+                  ),
+                ],
+              ),
+            ),
           ],
         ),
       ),
     );
   }
 }
-
-

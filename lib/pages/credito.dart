@@ -27,16 +27,16 @@ class _HomePageState extends State<Credito> {
         backgroundColor: Color.fromRGBO(5, 1, 22, 1),
       ),
       body: Padding(
-        padding: EdgeInsets.only(bottom: 200, left: 50, right: 50),
+        padding: EdgeInsets.only(bottom: 200, left: 10, right: 10),
         child: Column(
           mainAxisAlignment: MainAxisAlignment.spaceEvenly,
           children: [
             Container(
-              height: 115,
-              width: 800,
+              height: 170,
+              width: 900,
               color: Color.fromRGBO(11, 2, 53, 0.573),
               child: Text(
-                "Aplicação feita por: Mateus Cristo \n Github: github.com/etmamate\n Linkedin: https://www.linkedin.com/in/cristomateus\n Aplicação para fins de estudo.",
+                "Aplicação feita por: Mateus Cristo \n Github: github.com/etmamate\nLinkedin:\nin/cristomateus\n\nAplicação para fins de estudo.",
                 textAlign: TextAlign.center,
                 style: TextStyle(fontSize: 20, color: Colors.white),
               ),
