@@ -1,4 +1,3 @@
-import 'package:JokenPo/pages/home.dart';
 import 'package:flutter/material.dart';
 
 class Credito extends StatefulWidget {
@@ -9,11 +8,6 @@ class Credito extends StatefulWidget {
 }
 
 class _HomePageState extends State<Credito> {
-  static const primaryColor = Color.fromARGB(255, 255, 255, 255);
-  String texto_de_credito = "Aplicação feita por: github.com/etmamate";
-  _comecarJogo() {
-    Navigator.push(context, MaterialPageRoute(builder: (_) => HomePage()));
-  }
 
   @override
   Widget build(BuildContext context) {
